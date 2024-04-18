@@ -1,0 +1,161 @@
+.banner-container {
+    position: relative;
+    width: 100%;
+    /* Độ rộng của banner */
+    height: 100%;
+    /* Chiều cao của banner */
+}
+
+.logo-link {
+    position: absolute;
+    top: 42%;
+    left: 20px;
+    /* Khoảng cách từ mép trái của banner đến logo */
+    transform: translateY(-50%);
+}
+
+.logo {
+    display: block;
+    width: 100px;
+    /* Độ rộng của logo */
+    height: 100px;
+    /* Chiều cao của logo */
+    
+}
+
+.logo-container {
+    display: flex; /* Sử dụng flexbox để căn chỉnh nội dung theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.logo-text1{
+    display: block;
+    margin-left: 3%;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 2%;
+    white-space: nowrap;
+    color: #000000d6;
+}
+
+.logo-text2{
+    font-size: 18px;
+    display: block;
+    font-weight: bold;
+    color: #000000d6;
+    margin-bottom: 2%;
+    margin-left: 3%;
+    white-space: nowrap;
+}
+
+.logo{
+    margin-right: 10px;
+}
+.search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.search-box {
+    
+    display: block;
+}
+
+.search-box input[type="text"],
+.search-box button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.search-box input[type="text"] {
+    margin-right: 5px;
+    padding-bottom: 6px;
+    padding-top: 13px;
+    
+}
+
+.search-box button {
+    padding-top: 13px;
+    padding-bottom: 6px;
+    background-color: #007bff;
+    color: white;
+}
+
+.search-box button:hover {
+    padding-top: 12px;
+    padding-bottom: 8px;
+    background-color: #008bff;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar style */
+.navbar ul {
+    display: flex;
+    background-color: #23c270;
+    padding: 5px;
+    margin: -4px 0px;
+}
+
+.navbar li {
+    margin-right: 20px;
+    position: relative; /* Để dropdown menu có thể hiển thị tương đối */
+}
+
+.navbar a {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+
+.dropdown-menu {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: visibility 0s ease;
+    white-space: nowrap;
+    /* Để thẻ a trải dọc */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Căn giữa văn bản trong thẻ a */
+.dropdown-menu a {
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+/* Dropdown menu - hiển thị khi hover */
+.dropdown:hover .dropdown-menu {
+    visibility: visible;
+}
+
+.navbar .dropdown.active .dropdown-menu {
+    visibility: visible;
+}
+
+.navbar a:hover {
+    color: black;
+}
+
