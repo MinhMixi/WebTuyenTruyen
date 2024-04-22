@@ -4,6 +4,8 @@
     /* Độ rộng của banner */
     height: 100%;
     /* Chiều cao của banner */
+    margin-top: -8px;
+    margin-left: -8px;
 }
 
 .logo-link {
@@ -20,12 +22,12 @@
     /* Độ rộng của logo */
     height: 100px;
     /* Chiều cao của logo */
-    
 }
 
 .logo-container {
     display: flex; /* Sử dụng flexbox để căn chỉnh nội dung theo chiều ngang */
     align-items: center; /* Căn giữa theo chiều dọc */
+    margin-top: -18px;
 }
 
 .logo-text1{
@@ -51,6 +53,7 @@
 .logo{
     margin-right: 10px;
 }
+
 .search {
     position: absolute;
     top: 0;
@@ -59,7 +62,6 @@
 }
 
 .search-box {
-    
     display: block;
 }
 
@@ -68,14 +70,12 @@
     padding: 10px;
     border: none;
     border-radius: 5px;
-    
 }
 
 .search-box input[type="text"] {
     margin-right: 5px;
     padding-bottom: 6px;
     padding-top: 13px;
-    
 }
 
 .search-box button {
@@ -104,11 +104,16 @@ ul {
     background-color: #23c270;
     padding: 5px;
     margin: -4px 0px;
+    margin-right: -18px;
 }
 
 .navbar li {
     margin-right: 20px;
     position: relative; /* Để dropdown menu có thể hiển thị tương đối */
+}
+
+.navbar a:hover{
+    background-color: white;
 }
 
 .navbar a {
@@ -118,6 +123,7 @@ ul {
     text-decoration: none;
     display: block;
     padding: 10px 15px;
+    border-radius: 5px;
 }
 
 .dropdown-menu {
@@ -137,13 +143,14 @@ ul {
 /* Căn giữa văn bản trong thẻ a */
 .dropdown-menu a {
     padding: 10px 20px;
-    color: #333;
+    color: white;
     text-decoration: none;
     transition: background-color 0s ease;
+    font-size: 18px;
 }
 
 .dropdown-menu a:hover {
-    background-color: #ddd;
+    background-color: white;
 }
 
 /* Dropdown menu - hiển thị khi hover */
@@ -157,5 +164,10 @@ ul {
 
 .navbar a:hover {
     color: black;
+}
+
+.row{
+    margin-left: -5px;
+    margin-right: -5px;
 }
 
