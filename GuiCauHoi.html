@@ -70,22 +70,168 @@
     </header>
     <!-- Đây là body -->
     <div class="page">
+        <div class="well">
+            <p>Để không ngừng nâng cao chất lượng dịch vụ và đáp ứng tốt hơn nữa các yêu cầu của Quý khách,
+                chúng tôi mong muốn nhận được các thông tin phản hồi. Nếu Quý khách có bất kỳ thắc mắc hoặc đóng góp
+                nào,
+                xin vui lòng liên hệ với chúng tôi theo thông tin dưới đây. Chúng tôi sẽ phản hồi lại Quý khách trong
+                thời
+                gian sớm nhất.</p>
+        </div>
         <div class="row">
             <div class="col-sm-12 col-md-14">
-                <div class="panel-heading">
-                    <h3>Ban biên tập Cổng thông tin điện tử Ủy Ban Nhân Dân Phường 2 Quận 5</h3>
-                </div>
-                <div class="panel-body">
-                    <div class="margin-bottom">
-                        Bộ phận tiếp nhận và giải quyết các yêu cầu, đề nghị, ý kiến liên quan đến hoạt động chính của
-                        doanh nghiệp.
+                <div class="panel panel-left">
+                    <div class="panel-heading">
+                        <h3>Ban biên tập Cổng thông tin điện tử Ủy Ban Nhân Dân Phường 2 Quận 5</h3>
                     </div>
-                    <p><i class="fas fa-phone" style="white-space: nowrap;"> 028-3923-6954</i></p>
-                    <p><i class="fas fa-map" style="white-space: nowrap;"> 97 Trần Bình Trọng, Phường 2, Quận 5, Thành Phố Hồ Chí Minh</i></p>
-                    <p></p>
+                    <div class="panel-body">
+                        <div class="margin-bottom">
+                            Bộ phận tiếp nhận và giải quyết các yêu cầu, đề nghị, ý kiến liên quan đến hoạt động chính
+                            của doanh
+                            nghiệp.
+                        </div>
+                        <p><i class="fas fa-phone" style="white-space: nowrap;"></i> 028-3923-6954</p>
+                        <p><i class="fas fa-map" style="white-space: nowrap;"></i> 97 Trần Bình Trọng, Phường 2, Quận 5,
+                            Thành
+                            Phố Hồ Chí Minh</p>
+                        <div style="display: flex; align-items: flex-start;">
+                            <i class="fas fa-calendar-day" style="margin-right: 10px;"></i>
+                            <div>
+                                <p style="margin: 0; font-weight: bold;">Giờ làm việc: </p>
+                                <ul class="List-day-work" style="list-style: none; padding: 0; margin: 0;">
+                                    <li style="margin-right: 10px; white-space: nowrap;"> Thứ Hai 07:30-11:30,
+                                        3:00-17:00</li>
+                                    <li style="margin-right: 10px; white-space: nowrap;"> Thứ Ba 07:30-11:30,
+                                        13:00-17:00</li>
+                                    <li style="margin-right: 10px; white-space: nowrap;"> Thứ Tư 07:30-11:30,
+                                        13:00-17:00</li>
+                                    <li style="margin-right: 10px; white-space: nowrap;"> Thứ Năm 07:30-11:30,
+                                        13:00-17:00</li>
+                                    <li style="margin-right: 10px; white-space: nowrap;"> Thứ Sáu 07:30-11:30,
+                                        13:00-17:00</li>
+                                    <li style="margin-right: 10px; white-space: nowrap;"> Thứ Bảy 07:30-11:30,
+                                        13:00-17:00</li>
+                                    <li style="margin-right: 10px; white-space: nowrap;"> Chủ nhật Đóng cửa</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-sm-12 col-md-10">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Gửi phản hồi</div>
+                    <div class="panel-body loadContactForm">
+                        <div class="nv-fullbg">
+                            <form method="post" action="/vi/contact/ban-bien-tap/" onsubmit="return nv_validForm(this);"
+                                novalidate="">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <em class="fa fa-folder-open fa-lg fa-horizon">
+                                            </em>
+                                        </span>
+                                        <select class="form-control" name="fcat">
+                                            <option value="0">
+                                                Gửi góp ý
+                                            </option>
+                                            <option value="1">
+                                                Gửi câu hỏi
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <em class="fa fa-file-text fa-lg fa-horizon">
+                                            </em>
+                                        </span>
+                                        <input type="text" maxlength="255" class="form-control required" value=""
+                                            name="ftitle" placeholder="Tiêu đề" data-pattern="/^(.){3,}$/"
+                                            onkeypress="nv_validErrorHidden(this);" data-mess="Vui lòng nhập tiêu đề">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><em
+                                                class="fa fa-user fa-lg fa-horizon"></em></span>
+                                        <input type="text" maxlength="100" value="" name="fname"
+                                            class="form-control required" placeholder="Họ và tên"
+                                            data-pattern="/^(.){3,}$/" onkeypress="nv_validErrorHidden(this);"
+                                            data-mess="Vui lòng nhập họ và tên">
+                                        <span class="input-group-addon pointer" title="Đăng nhập"
+                                            onclick="return loginForm('');"><em class="fa fa-sign-in fa-lg"></em></span>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <em class="fa fa-envelope fa-lg fa-horizon"></em>
+                                        </span>
+                                        <input type="email" maxlength="60" value="" name="femail"
+                                            class="form-control required" placeholder="Email"
+                                            onkeypress="nv_validErrorHidden(this);"
+                                            data-mess="Vui lòng nhập email khả dụng">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <em class="fa fa-phone fa-lg fa-horizon"></em>
+                                        </span>
+                                        <input type="text" maxlength="60" value="" name="fphone" class="form-control"
+                                            placeholder="Điện thoại">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <em class="fa fa-home fa-lg fa-horizon"></em>
+                                        </span>
+                                        <input type="text" maxlength="60" value="" name="faddress" class="form-control"
+                                            placeholder="Địa chỉ">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div>
+                                        <textarea cols="8" name="fcon" class="form-control required" maxlength="1000"
+                                            placeholder="Nội dung" onkeypress="nv_validErrorHidden(this);"
+                                            data-mess="Vui lòng nhập nội dung"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label><input type="checkbox" name="sendcopy" value="1" checked="checked"><span>Gửi
+                                            bản sao thư này cho tôi</span></label>
+                                </div>
+                                <div class="form-group">
+                                    <div class="middle text-right clearfix">
+                                        <img width="150" height="40" title="Mã bảo mật" alt="Mã bảo mật"
+                                            src="/index.php?scaptcha=captcha&amp;t=1713757520"
+                                            class="captchaImg display-inline-block">
+                                        <em onclick="change_captcha('.fcode');" title="Thay mới"
+                                            class="fa fa-pointer fa-refresh margin-left margin-right"></em>
+                                        <input type="text" placeholder="Mã bảo mật" maxlength="6" value="" name="fcode"
+                                            class="fcode required form-control display-inline-block"
+                                            style="width:100px;" data-pattern="/^(.){6,6}$/"
+                                            onkeypress="nv_validErrorHidden(this);"
+                                            data-mess="Vui lòng nhập đúng mã bảo mật mà bạn thấy trong hình">
+                                    </div>
+                                </div>
+                                <div class="text-center form-group">
+                                    <input type="hidden" name="checkss" value="1c4a03079baada275ff96f7dc567dc89">
+                                    <input type="button" value="Nhập lại" class="btn btn-default"
+                                        onclick="nv_validReset(this.form);return!1;">
+                                    <input type="submit" value="Gửi đi" name="btsend" class="btn btn-primary">
+                                </div>
+                            </form>
+                            <div class="contact-result alert"></div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-12 col-sm-10"></div>
         </div>
     </div>
 </body>

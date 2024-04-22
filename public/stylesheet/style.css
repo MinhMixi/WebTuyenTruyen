@@ -171,3 +171,24 @@ ul {
     margin-right: -5px;
 }
 
+.col-md-14{
+    width: 58%;
+}
+
+.col-md-10{
+    width: 42%;
+}
+.panel-left{
+    border: #333333;
+}
+
+.panel-heading {
+    color: #333333;
+    background-color: #f5f5f5;
+    border-color: #dddddd;
+}
+
+.panel-heading{
+    padding: 10px;
+}
+
