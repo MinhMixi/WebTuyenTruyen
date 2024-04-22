@@ -166,29 +166,132 @@ ul {
     color: black;
 }
 
-.row{
-    margin-left: -5px;
-    margin-right: -5px;
+.well {
+    padding: 8px;
+    line-height: 18px;
 }
 
-.col-md-14{
-    width: 58%;
+.row {
+    display: flex;
 }
 
-.col-md-10{
-    width: 42%;
+.col-md-6-1 {
+    flex: 0 0 45%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
-.panel-left{
-    border: #333333;
+
+.col-md-6-2 {
+    flex: 0 0 38%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.panel {
+    width: 100%;
+}
+
+.panel.panel-left {
+    border: 1px solid #ccc; /* Màu và độ dày của đường viền */
+    border-radius: 5px; /* Độ cong của góc */
+    padding: 0px; /* Khoảng cách giữa nội dung và viền */
+    margin-bottom: 20px; /* Khoảng cách giữa các panel */
+    font-size: 16px;
+}
+
+.panel.panel-primary {
+    /* Thiết lập kích thước và vị trí của bảng */
+    width: 75%;
+    margin-bottom: 20px; /* Khoảng cách giữa các bảng */
+    border: 1px solid #ccc; /* Màu và độ dày của đường viền */
+    border-radius: 5px; /* Độ cong của góc */
+    padding: 0px; /* Khoảng cách giữa nội dung và viền */
 }
 
 .panel-heading {
-    color: #333333;
-    background-color: #f5f5f5;
-    border-color: #dddddd;
+    /* Thiết lập giao diện cho phần tiêu đề của bảng */
+    background-color: #337ab7; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    padding: 5px; /* Khoảng cách giữa lề và nội dung */
+    border-radius: 3px 3px 0 0; /* Bo tròn góc */
+    text-align: center;
 }
 
-.panel-heading{
-    padding: 10px;
+.panel-heading1 {
+    /* Thiết lập giao diện cho phần tiêu đề của bảng */
+    background-color: #337ab7; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    padding: 22px; /* Khoảng cách giữa lề và nội dung */
+    border-radius: 3px 3px 0 0; /* Bo tròn góc */
+    width: 90%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
 }
+
+.panel-body{
+    padding: 15px;
+}
+
+.panel-body.loadContactForm {
+    /* Thiết lập giao diện cho phần nội dung của bảng */
+    padding: 15px; /* Khoảng cách giữa lề và nội dung */
+}
+
+.form-group {
+    /* Thiết lập khoảng cách giữa các nhóm trường nhập */
+    margin-bottom: 15px;
+}
+
+.input-group-addon {
+    /* Thiết lập giao diện cho nhãn nhập */
+    background-color: #f5f5f5; /* Màu nền */
+    border: 1px solid #ccc; /* Viền */
+    padding: 10px; /* Khoảng cách giữa lề và nội dung */
+}
+
+.input-group-addon em {
+    /* Thiết lập giao diện cho biểu tượng trong nhãn nhập */
+    color: #337ab7; /* Màu chữ */
+}
+
+.form-control {
+    /* Thiết lập giao diện cho các trường nhập */
+    border: 1px solid #ccc; /* Viền */
+    border-radius: 3px; /* Bo tròn góc */
+    padding: 10px; /* Khoảng cách giữa lề và nội dung */
+}
+
+.checkbox {
+    /* Thiết lập giao diện cho checkbox */
+    margin-top: 0; /* Khoảng cách trên */
+    margin-bottom: 0; /* Khoảng cách dưới */
+}
+
+.btn {
+    /* Thiết lập giao diện cho nút */
+    padding: 10px 20px; /* Khoảng cách giữa lề và nội dung */
+    border-radius: 3px; /* Bo tròn góc */
+    cursor: pointer; /* Con trỏ */
+}
+
+.btn-default {
+    /* Thiết lập giao diện cho nút mặc định */
+    background-color: #f5f5f5; /* Màu nền */
+    border: 1px solid #ccc; /* Viền */
+    color: #333; /* Màu chữ */
+}
+
+.btn-primary {
+    /* Thiết lập giao diện cho nút chính */
+    background-color: #337ab7; /* Màu nền */
+    border: 1px solid #2e6da4; /* Viền */
+    color: #fff; /* Màu chữ */
+}
+
+.text-center {
+    /* Căn giữa nội dung */
+    text-align: center;
+}
+
 
