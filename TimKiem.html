@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="public/stylesheet/style.css">
     <script src="public/js/menu.js"></script>
+    <script src="public/js/search.js"></script>
 </head>
 
 <body>
@@ -50,24 +51,21 @@
                         </ul>
                     </li>
                 </ul>
-                <form action="#" method="GET">
+                <!-- <form action="#" method="GET"> -->
                     <div class="search">
                         <div class="search-box">
                             <i class="fas fa-search" style="width: 30px;height: 30px;
                             margin-right: -5px; margin-top: 150px; 
                             margin-bottom: 150px;">
                             </i>
-                            <input type="text" placeholder="Nhập từ khóa tìm kiếm">
-                            <button type="submit">Tìm kiếm</button>
+                            <input type="text" id="search-input" placeholder="Nhập từ khóa tìm kiếm">
+                            <button type="button" onclick="search()">Tìm kiếm</button>
                         </div>
                     </div>
-                </form>
+                    <div id="search-results-container">
+                        <!-- Kết quả tìm kiếm sẽ xuất hiện ở đây. -->
+                    </div>
+                <!-- </form> -->
             </div>
         </div>
     </header>
-    <!-- Đây là body -->
-    
-    <!-- Đây là footer -->
-</body>
-
-</html>
