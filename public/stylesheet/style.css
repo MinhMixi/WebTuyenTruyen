@@ -294,4 +294,94 @@ ul {
     text-align: center;
 }
 
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
 
+.show-black-h4{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.padding-right-col {
+    padding-right: 25px;
+}
+.margin-bottom-lg {
+    margin-bottom: 15px;
+}
+
+.bg-hot-news-title{
+    background-color: #23c270;
+    text-align: center;
+    width: 100%;
+    padding: 1px;
+    margin-bottom: 5%;
+}
+
+li.clear-fix{
+    margin-bottom: 7%;
+}
+
+.col-md-18{
+    width: 75%;
+}
+
+.col-md-6{
+    width: 25%;
+}
+
+.col-md-14{
+    width: 70%;
+}
+
+.col-md-10{
+    width: 30%;
+}
+
+.fix-more-padding {
+    padding: 20px;
+}
+
+.fix-more-padding1 {
+    padding: 10px 5px;
+}
+
+.h3{
+    font-size: 14px;
+}
+
+.fix-title-map{
+    margin: 10px 0px;
+    background-color: #23c270;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.fix-img-thumb-map {
+    text-align: center;
+}
+
+.backgroup-img {
+    background-color: #f4f4f4;
+}
+
+.row.top.body{
+    width: 100%;
+}
+
+.img-thumbnail {
+    background-color: #cccccc;
+    border: none;
+    border-radius: 0px;
+    max-width: 100%;
+    padding: 0px;
+}
+
+a.show-black-h4 {
+    margin-bottom: 25px;
+}
