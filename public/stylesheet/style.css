@@ -487,3 +487,43 @@ span.input-group-addon {
     border-radius: 10px;
     margin-right: 2%;
 }
+
+i.fas.fa-folder-open {
+    width: 15px;
+}
+
+i.fas.fa-home {
+    width: 15px;
+}
+
+i.fas.fa-phone {
+    width: 15px;
+}
+
+i.fas.fa-envelope {
+    width: 15px;
+}
+
+i.fas.fa-user {
+    width: 15px;
+}
+
+select.form-control {
+    width: 65%;
+}
+
+textarea.form-control.required {
+    width: 82%;
+}
+
+span.input-group-addon.pointer {
+    margin-left: 2%;
+}
+
+.input-group {
+    width: 115%;
+}
+
+.col-md-12 {
+    width: 50%;
+}
