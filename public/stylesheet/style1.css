@@ -17,15 +17,71 @@ h1 {
     background-color: #f4f4f4;
     border: 1px solid #f4f4f4;
     border-radius: 5px;
-    margin-bottom: 28%;
+    margin-bottom: 248%;
+}
+
+.required {
+    color: red;
 }
 
 .text-p{
     text-align: justify;
     font-size: 17px;
     color: #333;
+    line-height: 1.5;
 }
 
 .clearfix a:hover p {
     color: #a67942;
+}
+
+.col-md-24{
+    display: flex;
+    width: 100%;
+    padding: 20px;
+}
+
+.content-footer {
+    background-color: bisque;
+    text-align: center;
+    padding: 2% 1% 2% 1%;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px 5px 5px 5px;
+    border: 0.5px solid silver;
+}
+
+.col-md-8-content {
+    width: 100%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+ul.ul-content {
+    line-height: 1.5;
+    padding-top: 5%;
+    padding-left: 2%;
+}
+
+.margin-footer-site {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    vertical-align: bottom;
+    width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+#footer {
+    font-size: 16px;
+}
+
+#footer, #footer a {
+    color: #433b3b;
+}
+
+.backgroup-img {
+    background-color: #F4F5A2;
 }

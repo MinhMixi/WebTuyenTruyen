@@ -170,8 +170,10 @@ ul {
     padding: 1px;
     background-color: silver;
     border-radius: 20px;
-    margin-top: 12px;
+    margin-top: 2%;
+    margin-bottom: 1%;
     font-size: 18px;
+    line-height: 1.5;
 }
 
 .p{
@@ -238,6 +240,7 @@ ul {
 
 .panel-body{
     padding: 15px;
+    line-height: 1.5;
 }
 
 .panel-body.loadContactForm {
@@ -267,7 +270,7 @@ ul {
     border: 1px solid #ccc; /* Viền */
     border-radius: 3px; /* Bo tròn góc */
     padding: 10px; /* Khoảng cách giữa lề và nội dung */
-    width: 60%;
+    width: 70%;
 }
 
 .checkbox {
@@ -509,11 +512,11 @@ i.fas.fa-user {
 }
 
 select.form-control {
-    width: 65%;
+    width: 75%;
 }
 
 textarea.form-control.required {
-    width: 82%;
+    width: 93%;
 }
 
 span.input-group-addon.pointer {
