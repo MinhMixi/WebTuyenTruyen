@@ -530,3 +530,8 @@ span.input-group-addon.pointer {
 .col-md-12 {
     width: 50%;
 }
+
+.highlighted {
+    background-color: #ffffcc; /* Màu nền nổi bật */
+    border: 2px solid #ffcc00; /* Viền nổi bật */
+}

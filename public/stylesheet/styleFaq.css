@@ -1,0 +1,14 @@
+
+.custom-faq {
+    color: #333; /* Màu văn bản ban đầu */
+    text-decoration: none; /* Loại bỏ gạch chân ban đầu */
+}
+
+.custom-faq:hover {
+    color: #a67942; /* Màu văn bản khi trỏ vào */
+    text-decoration: underline; /* Gạch chân khi trỏ vào */
+}
+
+.col-md-18.fix-more-padding {
+    line-height: 1.5;
+}
