@@ -11,4 +11,30 @@
 
 .col-md-18.fix-more-padding {
     line-height: 1.5;
+    margin-bottom: 5%;
+}
+
+.show_detail .detail_faq .title {
+    background: url(images/icon/faq.gif) no-repeat left -48px;
+    border-bottom: 1px solid #92c2fe;
+    display: block;
+    font: bold 12px / 24px arial, verdana, sans-serif;
+    margin-bottom: 5px;
+    padding-left: 27px;
+}
+
+.gotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999; /* Đảm bảo nút luôn nằm trên các phần tử khác */
+    display: none; /* Ẩn nút khi không cần thiết */
+}
+
+.p-title{
+    font-size: 16px;
+}
+
+.block_faq {
+    margin-bottom: 1%;
 }
