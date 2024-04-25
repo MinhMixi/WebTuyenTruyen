@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="public/stylesheet/style.css">
     <link rel="stylesheet" href="public/stylesheet/styleFooter.css">
-    <script src="public/js/menu.js"></script>
+    <link rel="stylesheet" href="public/stylesheet/darkmode.css">
 </head>
 
 <body>
@@ -50,6 +50,12 @@
                             <li><a href="GuiCauHoi.html">GỬI CÂU HỎI</a></li>
                         </ul>
                     </li>
+                    <li class="darkmode-button">
+                        <label class="switch">
+                            <input type="checkbox" id="toggleSwitch">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
                 </ul>
                 <form id="search-form" onsubmit="return search()">
                     <div class="search">
@@ -69,7 +75,8 @@
     <!-- Đây là body -->
     <div class="page">
         <div class="well">
-            <p>Để không ngừng nâng cao chất lượng dịch vụ và đáp ứng tốt hơn nữa các yêu cầu của Quý khách,
+            <p style="color: #333;">Để không ngừng nâng cao chất lượng dịch vụ và đáp ứng tốt hơn nữa các yêu cầu của
+                Quý khách,
                 chúng tôi mong muốn nhận được các thông tin phản hồi. Nếu Quý khách có bất kỳ thắc mắc hoặc đóng góp
                 nào,
                 xin vui lòng liên hệ với chúng tôi theo thông tin dưới đây. Chúng tôi sẽ phản hồi lại Quý khách trong
@@ -78,120 +85,133 @@
         </div>
         <hr>
         <div class="container" style="padding-top: 1.5%;">
-        <div class="row">
-            <div class="col-md-6-1">
-                <div class="panel panel-left">
-                    <div class="panel-heading">
-                        <h3>Ban biên tập Cổng thông tin điện tử Ủy Ban Nhân Dân Phường 2 Quận 5</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div class="margin-bottom">
-                            Bộ phận tiếp nhận và giải quyết các yêu cầu, đề nghị, ý kiến liên quan đến hoạt động chính
-                            của doanh
-                            nghiệp.
+            <div class="row">
+                <div class="col-md-6-1">
+                    <div class="panel panel-left">
+                        <div class="panel-heading">
+                            <h3>Ban biên tập Cổng thông tin điện tử Ủy Ban Nhân Dân Phường 2 Quận 5</h3>
                         </div>
-                        <p><i class="fas fa-phone" style="white-space: nowrap;"></i> 028-3923-6954</p>
-                        <p><i class="fas fa-map" style="white-space: nowrap;"></i> 97 Trần Bình Trọng, Phường 2, Quận 5,
-                            Thành
-                            Phố Hồ Chí Minh</p>
-                        <div style="display: flex; align-items: flex-start;">
-                            <i class="fas fa-calendar-day" style="margin-right: 10px;"></i>
-                            <div>
-                                <p style="margin: 0; font-weight: bold;">Giờ làm việc: </p>
-                                <ul class="List-day-work" style="list-style: none; padding: 0; margin: 0;">
-                                    <li style="margin-right: 10px; white-space: nowrap;"> Thứ Hai 07:30-11:30,
-                                        3:00-17:00</li>
-                                    <li style="margin-right: 10px; white-space: nowrap;"> Thứ Ba 07:30-11:30,
-                                        13:00-17:00</li>
-                                    <li style="margin-right: 10px; white-space: nowrap;"> Thứ Tư 07:30-11:30,
-                                        13:00-17:00</li>
-                                    <li style="margin-right: 10px; white-space: nowrap;"> Thứ Năm 07:30-11:30,
-                                        13:00-17:00</li>
-                                    <li style="margin-right: 10px; white-space: nowrap;"> Thứ Sáu 07:30-11:30,
-                                        13:00-17:00</li>
-                                    <li style="margin-right: 10px; white-space: nowrap;"> Thứ Bảy 07:30-11:30,
-                                        13:00-17:00</li>
-                                    <li style="margin-right: 10px; white-space: nowrap;"> Chủ nhật Đóng cửa</li>
-                                </ul>
+                        <div class="panel-body">
+                            <div class="margin-bottom">
+                                Bộ phận tiếp nhận và giải quyết các yêu cầu, đề nghị, ý kiến liên quan đến hoạt động
+                                chính
+                                của doanh
+                                nghiệp.
+                            </div>
+                            <p><i class="fas fa-phone" style="white-space: nowrap;"></i> 028-3923-6954</p>
+                            <p><i class="fas fa-map" style="white-space: nowrap;"></i> 97 Trần Bình Trọng, Phường 2,
+                                Quận 5,
+                                Thành
+                                Phố Hồ Chí Minh</p>
+                            <div style="display: flex; align-items: flex-start;">
+                                <i class="fas fa-calendar-day" style="margin-right: 10px;"></i>
+                                <div>
+                                    <p style="margin: 0; font-weight: bold;">Giờ làm việc: </p>
+                                    <ul class="List-day-work" style="list-style: none; padding: 0; margin: 0;">
+                                        <li style="margin-right: 10px; white-space: nowrap;"> Thứ Hai 07:30-11:30,
+                                            3:00-17:00</li>
+                                        <li style="margin-right: 10px; white-space: nowrap;"> Thứ Ba 07:30-11:30,
+                                            13:00-17:00</li>
+                                        <li style="margin-right: 10px; white-space: nowrap;"> Thứ Tư 07:30-11:30,
+                                            13:00-17:00</li>
+                                        <li style="margin-right: 10px; white-space: nowrap;"> Thứ Năm 07:30-11:30,
+                                            13:00-17:00</li>
+                                        <li style="margin-right: 10px; white-space: nowrap;"> Thứ Sáu 07:30-11:30,
+                                            13:00-17:00</li>
+                                        <li style="margin-right: 10px; white-space: nowrap;"> Thứ Bảy 07:30-11:30,
+                                            13:00-17:00</li>
+                                        <li style="margin-right: 10px; white-space: nowrap;"> Chủ nhật Đóng cửa</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="col-md-6-2">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading1">Gửi phản hồi</div>
+                        <div class="panel-body loadContactForm">
+                            <div class="nv-fullbg">
+                                <form method="post" action="GuiCauHoi.html" onsubmit="return nv_validForm(this);"
+                                    novalidate="">
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="fas fa-folder-open"></i>
+                                            </span>
+                                            <select class="form-control" name="fcat">
+                                                <option value="0">Gửi góp ý</option>
+                                                <option value="1">Gửi câu hỏi</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="fas fa-user custom"></i>
+                                            </span>
+                                            <input type="text" maxlength="100" value="" name="fname"
+                                                class="form-control required" placeholder="Họ và tên"
+                                                data-pattern="/^(.){3,}$/" onkeypress="nv_validErrorHidden(this);"
+                                                data-mess="Vui lòng nhập họ và tên">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="fas fa-envelope"></i>
+                                            </span>
+                                            <input type="email" maxlength="60" value="" name="femail"
+                                                class="form-control required" placeholder="Email"
+                                                onkeypress="nv_validErrorHidden(this);"
+                                                data-mess="Vui lòng nhập email khả dụng">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="fas fa-phone"></i>
+                                            </span>
+                                            <input type="text" maxlength="60" value="" name="fphone"
+                                                class="form-control" placeholder="Điện thoại">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">
+                                                <i class="fas fa-home"></i>
+                                            </span>
+                                            <input type="text" maxlength="60" value="" name="faddress"
+                                                class="form-control" placeholder="Địa chỉ">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div>
+                                            <textarea cols="8" name="fcon" class="form-control required"
+                                                maxlength="1000" placeholder="Nội dung"
+                                                onkeypress="nv_validErrorHidden(this);"
+                                                data-mess="Vui lòng nhập nội dung"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label><input type="checkbox" name="sendcopy" value="1"><span>Gửi bản sao thư
+                                                này cho tôi</span></label>
+                                    </div>
+                                    <div class="text-center form-group">
+                                        <input type="hidden" name="checkss" value="1c4a03079baada275ff96f7dc567dc89">
+                                        <input type="button" value="Nhập lại" class="btn btn-default"
+                                            onclick="nv_validReset(this.form);return!1;">
+                                        <input type="submit" value="Gửi đi" name="btsend" class="btn btn-primary">
+                                    </div>
+                                </form>
+                                <div class="contact-result alert"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <hr>
-            <div class="col-md-6-2">
-                
-                <div class="panel panel-primary">
-                    <div class="panel-heading1">Gửi phản hồi</div>
-                    <div class="panel-body loadContactForm">
-                        <div class="nv-fullbg">
-                            <form method="post" action="GuiCauHoi.html" onsubmit="return nv_validForm(this);" novalidate="">
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <span class="input-group-addon">
-                                            <i class="fas fa-folder-open"></i>
-                                        </span>
-                                        <select class="form-control" name="fcat">
-                                            <option value="0">Gửi góp ý</option>
-                                            <option value="1">Gửi câu hỏi</option>
-                                        </select>
-                                    </div>
-                                </div> 
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <span class="input-group-addon">
-                                            <i class="fas fa-user"></i>
-                                        </span>
-                                        <input type="text" maxlength="100" value="" name="fname" class="form-control required" placeholder="Họ và tên" data-pattern="/^(.){3,}$/" onkeypress="nv_validErrorHidden(this);" data-mess="Vui lòng nhập họ và tên">
-                                        <!-- <span class="input-group-addon pointer" title="Đăng nhập" onclick="return loginForm('');"><i class="fas fa-sign-in-alt"></i></span> -->
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <span class="input-group-addon">
-                                            <i class="fas fa-envelope"></i>
-                                        </span>
-                                        <input type="email" maxlength="60" value="" name="femail" class="form-control required" placeholder="Email" onkeypress="nv_validErrorHidden(this);" data-mess="Vui lòng nhập email khả dụng">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <span class="input-group-addon">
-                                            <i class="fas fa-phone"></i>
-                                        </span>
-                                        <input type="text" maxlength="60" value="" name="fphone" class="form-control" placeholder="Điện thoại">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="input-group">
-                                        <span class="input-group-addon">
-                                            <i class="fas fa-home"></i>
-                                        </span>
-                                        <input type="text" maxlength="60" value="" name="faddress" class="form-control" placeholder="Địa chỉ">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <div>
-                                        <textarea cols="8" name="fcon" class="form-control required" maxlength="1000" placeholder="Nội dung" onkeypress="nv_validErrorHidden(this);" data-mess="Vui lòng nhập nội dung"></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label><input type="checkbox" name="sendcopy" value="1"><span>Gửi bản sao thư này cho tôi</span></label>
-                                </div>
-                                <div class="text-center form-group">
-                                    <input type="hidden" name="checkss" value="1c4a03079baada275ff96f7dc567dc89">
-                                    <input type="button" value="Nhập lại" class="btn btn-default" onclick="nv_validReset(this.form);return!1;">
-                                    <input type="submit" value="Gửi đi" name="btsend" class="btn btn-primary">
-                                </div>
-                            </form>
-                            <div class="contact-result alert"></div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
         </div>
-    </div>
     </div>
     <br>
 
@@ -212,7 +232,7 @@
                             <li>Sở tài chính</li>
                         </ul>
                     </div>
-                    
+
                     <div class="col-md-8-content">
                         <div class="content-footer">
                             BỘ / NGÀNH
@@ -225,7 +245,7 @@
                             <li>Bộ Y tế</li>
                         </ul>
                     </div>
-                    
+
                     <div class="col-md-8-content">
                         <div class="content-footer">
                             ĐOÀN HỘI
@@ -247,15 +267,19 @@
                             <span style="font-size: 20px; text-transform: uppercase;">
                                 <strong>Ban biên tập Cổng thông tin điện tử UBND Phường 2 Quận 5</strong>
                             </span>
-                            <p style="white-space: nowrap;">Địa chỉ: 97 Trần Bình Trọng, Phường 2, Quận 5, Thành Phố Hồ Chí Minh</p>
+                            <p style="white-space: nowrap;">Địa chỉ: 97 Trần Bình Trọng, Phường 2, Quận 5, Thành Phố Hồ
+                                Chí Minh</p>
                             <p>Điện thoại: 028-3923-6954</p>
                         </div>
                         <div class="col-md-24-2 text-center">
                             <div>
                                 <p>© 2024 - Bản quyền&nbsp;thuộc về UBND Phường 2 Quận 5.</p>
-                                <p>Ghi rõ nguồn "UBND Phường 2 Quận 5" và dẫn đến URL nguồn tin khi phát hành lại thông tin từ website này.</p>
-                                <p><a href="#" style="color: black;text-decoration: none;">Điều khoản sử dụng</a> | 
-                                <a href="#" style="color: black;text-decoration: none;">Chính sách bảo mật (Quyền riêng tư)</a></p>
+                                <p>Ghi rõ nguồn "UBND Phường 2 Quận 5" và dẫn đến URL nguồn tin khi phát hành lại thông
+                                    tin từ website này.</p>
+                                <p><a href="#" style="color: black;text-decoration: none;">Điều khoản sử dụng</a> |
+                                    <a href="#" style="color: black;text-decoration: none;">Chính sách bảo mật (Quyền
+                                        riêng tư)</a>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -263,6 +287,8 @@
             </div>
         </div>
     </footer>
+    <script src="public/js/menu.js"></script>
+    <script src="public/js/darkmode.js"></script>
 </body>
 
 </html>

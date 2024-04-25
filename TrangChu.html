@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="public/stylesheet/style.css">
     <link rel="stylesheet" href="public/stylesheet/styleFooter.css">
-    <script src="public/js/menu.js"></script>
-    <script src="public/js/search.js"></script>
+    <link rel="stylesheet" href="public/stylesheet/darkmode.css">
 </head>
 
 <body>
+
     <!-- Đây là header-->
     <header>
         <div class="banner-container">
@@ -51,6 +51,12 @@
                             <li><a href="GuiCauHoi.html">GỬI CÂU HỎI</a></li>
                         </ul>
                     </li>
+                    <li class="darkmode-button">
+                        <label class="switch">
+                            <input type="checkbox" id="toggleSwitch">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
                 </ul>
                 <form id="search-form" onsubmit="return search()">
                     <div class="search">
@@ -67,6 +73,7 @@
             </div>
         </div>
     </header>
+    <br>
 
     <!-- Đây là body -->
     <div class="row">
@@ -81,7 +88,7 @@
                         <h2 class="margin-bottom-sm"><a href="tintuc1.html" style="text-decoration: none;color: black;">
                                 Phường 2 ra mắt Trung tâm Văn hóa - Thể thao</a>
                         </h2>
-                        <p>Trung tâm Văn hóa - Thể thao phường 2 tại 756 Trần Hưng Đạo, Phường 2, Quận 5 được sửa chữa
+                        <p style="color: black;">Trung tâm Văn hóa - Thể thao phường 2 tại 756 Trần Hưng Đạo, Phường 2, Quận 5 được sửa chữa
                             từ tháng 4/2019 với kinh phí trên 1,5 tỷ đồng;
                             công trình có quy mô 4 tầng, với các phòng chức năng: Thư viện, trung tâm học tập cộng đồng,
                             lớp học kiến thức, kỹ năng, phòng họp và hội trường...</p>
@@ -128,11 +135,10 @@
             <div class="fix-title-map">
                 <h2>BẢN ĐỒ HÀNH CHÍNH</h2>
             </div>
-            <div class="fix-img-thumb-map">
-                <div class="nv-block-banners">
-                    <img src="images/img/BanDoVN.jpg" width="230" height="312">
-                </div>
+            <div class="img-map">
+                <img src="images/img/BanDoVN.jpg" width="100%" height="1%">
             </div>
+            
         </div>
     </div>
     <hr>
@@ -279,7 +285,8 @@
                                                                         class="show" href="#"
                                                                         data-content="Việc trang bị kỹ năng thoát hiểm khi xảy ra cháy với mỗi người là hết sức cần thiết. Trong tình huống khẩn cấp, chúng ta có thể sử dụng các kỹ năng..."
                                                                         data-img="images/img/Hinh2.jpg"
-                                                                        data-rel="cattitlebox">Phường 2 Quận 5: Nâng cấp mở rộng hẻm, nâng cấp đời sống nhân dân</a></h3>
+                                                                        data-rel="cattitlebox">Phường 2 Quận 5: Nâng cấp
+                                                                        mở rộng hẻm, nâng cấp đời sống nhân dân</a></h3>
                                                                 <div class="htext">Phát biểu tại buổi lễ, Chủ tịch UBND
                                                                     P2 Q5 Nguyễn Nghiêm Quốc Cường cho biết,
                                                                     trong những năm qua đảng bộ và chính quyền, nhân dân
@@ -306,19 +313,19 @@
                                                                 </div>
                                                             </div>
                                                             <div class="ct" style="height: 263.925px;">
-                                                                <h3><a title=""
-                                                                        class="show"
-                                                                        href="#"
+                                                                <h3><a title="" class="show" href="#"
                                                                         data-content="TP.HCM: Sắp xếp khu phố, ấp giúp tinh gọn bộ máy và gần dân hơn"
                                                                         data-img="images/img/Hinh4.jpg"
-                                                                        data-rel="cattitlebox">TP.HCM: Sắp xếp khu phố, ấp giúp tinh gọn bộ máy và gần dân hơn</a></h3>
-                                                                <div class="htext">Đầu tháng 4 này, nhiều khu phố, ấp trên địa bàn TP.HCM tổ chức lễ công bố Nghị quyết 11 của HĐND TP về thành lập, 
+                                                                        data-rel="cattitlebox">TP.HCM: Sắp xếp khu phố,
+                                                                        ấp giúp tinh gọn bộ máy và gần dân hơn</a></h3>
+                                                                <div class="htext">Đầu tháng 4 này, nhiều khu phố, ấp
+                                                                    trên địa bàn TP.HCM tổ chức lễ công bố Nghị quyết 11
+                                                                    của HĐND TP về thành lập,
                                                                     chia tách, sáp nhập, đổi tên khu phố, ấp.</div>
                                                             </div>
                                                         </div>
-                                                        <div class="backgroup-viewdetail"><a
-                                                                href="#"
-                                                                class="more">Chi tiết</a></div>
+                                                        <div class="backgroup-viewdetail"><a href="#" class="more">Chi
+                                                                tiết</a></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1135,7 +1142,7 @@
                             <li>Sở tài chính</li>
                         </ul>
                     </div>
-                    
+
                     <div class="col-md-8-content">
                         <div class="content-footer">
                             BỘ / NGÀNH
@@ -1148,7 +1155,7 @@
                             <li>Bộ Y tế</li>
                         </ul>
                     </div>
-                    
+
                     <div class="col-md-8-content">
                         <div class="content-footer">
                             ĐOÀN HỘI
@@ -1170,15 +1177,19 @@
                             <span style="font-size: 20px; text-transform: uppercase;">
                                 <strong>Ban biên tập Cổng thông tin điện tử UBND Phường 2 Quận 5</strong>
                             </span>
-                            <p style="white-space: nowrap;">Địa chỉ: 97 Trần Bình Trọng, Phường 2, Quận 5, Thành Phố Hồ Chí Minh</p>
+                            <p style="white-space: nowrap;">Địa chỉ: 97 Trần Bình Trọng, Phường 2, Quận 5, Thành Phố Hồ
+                                Chí Minh</p>
                             <p>Điện thoại: 028-3923-6954</p>
                         </div>
                         <div class="col-md-24-2 text-center">
                             <div>
                                 <p>© 2024 - Bản quyền&nbsp;thuộc về UBND Phường 2 Quận 5.</p>
-                                <p>Ghi rõ nguồn "UBND Phường 2 Quận 5" và dẫn đến URL nguồn tin khi phát hành lại thông tin từ website này.</p>
-                                <p><a href="#" style="color: black;text-decoration: none;">Điều khoản sử dụng</a> | 
-                                <a href="#" style="color: black;text-decoration: none;">Chính sách bảo mật (Quyền riêng tư)</a></p>
+                                <p>Ghi rõ nguồn "UBND Phường 2 Quận 5" và dẫn đến URL nguồn tin khi phát hành lại thông
+                                    tin từ website này.</p>
+                                <p><a href="#" style="color: black;text-decoration: none;">Điều khoản sử dụng</a> |
+                                    <a href="#" style="color: black;text-decoration: none;">Chính sách bảo mật (Quyền
+                                        riêng tư)</a>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -1186,6 +1197,9 @@
             </div>
         </div>
     </footer>
+    <script src="public/js/menu.js"></script>
+    <script src="public/js/search.js"></script>
+    <script src="public/js/darkmode.js"></script>
 </body>
 
 </html>

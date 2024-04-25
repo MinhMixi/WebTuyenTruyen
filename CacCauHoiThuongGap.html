@@ -7,11 +7,12 @@
     <title>UBND PHƯỜNG 2 QUẬN 5</title>
     <link rel="icon" href="images/favicon/favicon1.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+    integrity="sha512-zs8UjX3ADoGdD+bLfB/jU9ZSzf0v9gr8dpjMfZ+ob3D4QCB5thlS1iWl5mqfF9PphtSjx9o8ZALoXWihJBfc8g==" crossorigin="anonymous" />
     <link rel="stylesheet" href="public/stylesheet/style.css">
     <link rel="stylesheet" href="public/stylesheet/styleFooter.css">
     <link rel="stylesheet" href="public/stylesheet/styleFaq.css">
-    <script src="public/js/menu.js"></script>
-    <script src="public/js/faq.js"></script>
+    <link rel="stylesheet" href="public/stylesheet/darkmode.css">
 </head>
 
 <body>
@@ -52,6 +53,12 @@
                             <li><a href="GuiCauHoi.html">GỬI CÂU HỎI</a></li>
                         </ul>
                     </li>
+                    <li class="darkmode-button">
+                        <label class="switch">
+                            <input type="checkbox" id="toggleSwitch">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
                 </ul>
                 <form id="search-form" onsubmit="return search()">
                     <div class="search">
@@ -77,49 +84,58 @@
                 <a name="faqlist"></a>
                 <div class="block_faq">
                     <div class="title">
+                        <i class="fas fa-book icon-book"></i>
                         <a href="#faq9" onclick="highlightSection('faq9');" class="custom-faq">DỊCH VỤ CÔNG TRỰC TUYẾN LÀ GÌ VÀ CÓ
                             MẤY MỨC ĐỘ?</a>
                     </div>
                 </div>
                 <div class="block_faq">
                     <div class="title">
+                        <i class="fas fa-book icon-book"></i>
                         <a href="#faq8" onclick="highlightSection('faq8');" class="custom-faq">THẾ NÀO LÀ KẾT QUẢ GIẢI QUYẾT
                             TTHC?</a>
                     </div>
                 </div>
                 <div class="block_faq">
                     <div class="title">
+                        <i class="fas fa-book icon-book"></i>
                         <a href="#faq7" onclick="highlightSection('faq7');" class="custom-faq">CÓ MẤY HÌNH THỨC THỰC HIỆN TTHC QUA
                             DỊCH VỤ BƯU CHÍNH CÔNG ÍCH?</a>
                     </div>
                 </div>
                 <div class="block_faq">
                     <div class="title">
+                        <i class="fas fa-book icon-book"></i>
                         <a href="#faq6" onclick="highlightSection('faq6');" class="custom-faq">TỰ CHUYỂN VIỆN ĐỂ PHẪU THUẬT, HƯỜNG BHYT THẾ NÀO?</a>
                     </div>
                 </div>
                 <div class="block_faq">
                     <div class="title">
+                        <i class="fas fa-book icon-book"></i>
                         <a href="#faq5" onclick="highlightSection('faq5');" class="custom-faq">HƯỞNG QUYỀN LỢI BHYT THEO ĐỐI TƯỢNG THAM GIA</a>
                     </div>
                 </div>
                 <div class="block_faq">
                     <div class="title">
+                        <i class="fas fa-book icon-book"></i>
                         <a href="#faq4" onclick="highlightSection('faq4');" class="custom-faq">ĐÓNG TRÙNG BHXH GIỮA HAI CÔNG TY, GIẢI QUYẾT THẾ NÀO?</a>
                     </div>
                 </div>
                 <div class="block_faq">
                     <div class="title">
+                        <i class="fas fa-book icon-book"></i>
                         <a href="#faq3" onclick="highlightSection('faq3');" class="custom-faq">ĐIỀU KIỆN CẤP CHỨNG CHỈ NĂNG LỰC XÂY DỰNG LÀM KHÓ DN NHỎ?</a>
                     </div>
                 </div>
                 <div class="block_faq">
                     <div class="title">
+                        <i class="fas fa-book icon-book"></i>
                         <a href="#faq2" onclick="highlightSection('faq2');" class="custom-faq">NHIỀU HỘ SỐNG CÙNG MỘT ĐỊA CHỈ, TÁCH HỘ KHẨU THẾ NÀO?</a>
                     </div>
                 </div>
                 <div class="block_faq">
                     <div class="title">
+                        <i class="fas fa-book icon-book"></i>
                         <a href="#faq1" onclick="highlightSection('faq1');" class="custom-faq">KHÔNG CẤP LẠI BẢN CHÍNH BẰNG VĂN BẰNG, CHỨNG CHỈ</a>
                     </div>
                 </div>
@@ -130,12 +146,13 @@
                 <div class="gotop" id="gotop">
                     <a href="#faqlist" title="Lên phía trên" onclick="scrollToTop();">
                         <img class="img-button-go-up" alt="Lên phía trên" title="Lên phía trên"
-                            src="images/icon/gotop.png" width="100px" height="100px"></a>     
+                            src="images/icon/gotop1.png" width="50px" height="50px"></a>     
                 </div>
                 <a name="faq9"></a>
                 <div class="detail_faq" id="faq9">
-                    <div class="title">
-                        <p class="p-title">DỊCH VỤ CÔNG TRỰC TUYẾN LÀ GÌ VÀ CÓ MẤY MỨC ĐỘ?</p>
+                    <div class="title" style="font-size: 14px;">
+                        <i class="fas fa-book icon-book1"></i>
+                        <span class="text">DỊCH VỤ CÔNG TRỰC TUYẾN LÀ GÌ VÀ CÓ MẤY MỨC ĐỘ?</span>
                     </div>
                     <div class="question">
                         <strong>Câu hỏi:</strong><br>
@@ -152,8 +169,9 @@
                 <br>
                 <a name="faq8"></a>
                 <div class="detail_faq" id="faq8">
-                    <div class="title">
-                        <p class="p-title">NÀO LÀ KẾT QUẢ GIẢI QUYẾT TTHC?</p>
+                    <div class="title" style="font-size: 14px;">
+                        <i class="fas fa-book icon-book1"></i>
+                        <span class="text">THẾ NÀO LÀ KẾT QUẢ GIẢI QUYẾT TTHC?</span>
                     </div>
                     <div class="question">
                         <strong>Câu hỏi:</strong><br>
@@ -170,8 +188,9 @@
                 <br>
                 <a name="faq7"></a>
                 <div class="detail_faq" id="faq7">
-                    <div class="title">
-                        <p class="p-title">CÓ MẤY HÌNH THỨC THỰC HIỆN TTHC QUA DỊCH VỤ BƯU CHÍNH CÔNG ÍCH?</p>
+                    <div class="title" style="font-size: 14px;">
+                        <i class="fas fa-book icon-book1"></i>
+                        <span class="text">CÓ MẤY HÌNH THỨC THỰC HIỆN TTHC QUA DỊCH VỤ BƯU CHÍNH CÔNG ÍCH?</span>
                     </div>
                     <div class="question">
                         <strong>Câu hỏi:</strong><br>
@@ -188,21 +207,22 @@
                 <br>
                 <a name="faq6"></a>
                 <div class="detail_faq" id="faq6">
-                    <div class="title">
-                        <p class="p-title">Tự chuyển viện để phẫu thuật, hưởng BHYT thế nào?</p>
+                    <div class="title" style="font-size: 14px;">
+                        <i class="fas fa-book icon-book1"></i>
+                        <span class="text">TỰ CHUYỂN VIỆN ĐỂ PHẪU THUẬT, HƯỞNG BHYT THẾ NÀO?</span>
                     </div>
                     <div class="question">
-                        <strong>Câu hỏi:</strong><br>
-                        Bà nội của ông Hữu Trọng (Nghệ An) có thẻ BHYT đối tượng người có công với cách mạng. Bà của ông
+                        <strong>Câu hỏi:</strong>
+                        <p>Bà nội của ông Hữu Trọng (Nghệ An) có thẻ BHYT đối tượng người có công với cách mạng. Bà của ông
                         đã đi khám tại bệnh viện tuyến tỉnh, sau đó đến bệnh viện tại TP. Hà Nội để khám lại. Hiện bà
-                        của ông muốn được phẫu thuật ở bệnh viện tại TP. Hà Nội.<br>Gia đình ông Trọng đã xin giấy
-                        chuyển viện của bệnh viện tuyến tỉnh nhưng không được chấp thuận, trường hợp muốn có giấy chuyển
-                        viện thì gia đình phải chịu phí 3 triệu đồng.<br><br>Ông Trọng hỏi, bệnh viện tuyến tỉnh thực
-                        hiện như vậy có đúng không? Bà của ông phẫu thuật tại bệnh viện ở TP. Hà Nội mà không có giấy
-                        chuyển tuyến thì có được hưởng 100% BHYT không?
+                        của ông muốn được phẫu thuật ở bệnh viện tại TP. Hà Nội.</p>
+                        <p>Gia đình ông Trọng đã xin giấy chuyển viện của bệnh viện tuyến tỉnh nhưng không được chấp thuận, 
+                        trường hợp muốn có giấy chuyển viện thì gia đình phải chịu phí 3 triệu đồng.</p>
+                        <p>Ông Trọng hỏi, bệnh viện tuyến tỉnh thực hiện như vậy có đúng không? Bà của ông phẫu thuật 
+                        tại bệnh viện ở TP. Hà Nội mà không có giấy chuyển tuyến thì có được hưởng 100% BHYT không?</p>
                     </div>
                     <div class="answer">
-                        <strong>Trả lời:</strong><br>
+                        <strong>Trả lời:</strong>
                         <p><em>Về vấn đề này, BHXH Việt Nam trả lời như sau:</em></p>
                         <p>Khi vượt quá khả năng chuyên môn, cơ sở khám, chữa bệnh có trách nhiệm phải chuyển người bệnh
                             lên cơ sở tuyến trên để được khám và điều trị.</p>
@@ -219,9 +239,9 @@
                 <br>
                 <a name="faq5"></a>
                 <div class="detail_faq" id="faq5">
-                    <div class="title">
-                        
-                        <p class="p-title">Hưởng quyền lợi BHYT theo đối tượng tham gia</p>
+                    <div class="title" style="font-size: 14px;">
+                        <i class="fas fa-book icon-book1"></i>
+                        <span class="text">HƯỞNG QUYỀN LỢI BHYT THEO ĐỐI TƯỢNG THAM GIA</span>
                     </div>
                     <div class="question">
                         <strong>Câu hỏi:</strong><br>
@@ -241,9 +261,9 @@
                 <br>
                 <a name="faq4"></a>
                 <div class="detail_faq" id="faq4">
-                    <div class="title">
-                        
-                        <p class="p-title">Đóng trùng BHXH giữa hai công ty, giải quyết thế nào?</p>
+                    <div class="title" style="font-size: 14px;">
+                        <i class="fas fa-book icon-book1"></i>
+                        <span class="text">ĐÓNG TRÙNG BHXH GIỮA HAI CÔNG TY, GIẢI QUYẾT THẾ NÀO?</span>
                     </div>
                     <div class="question">
                         <strong>Câu hỏi:</strong><br>
@@ -280,9 +300,9 @@
                 <br>
                 <a name="faq3"></a>
                 <div class="detail_faq" id="faq3">
-                    <div class="title">
-                        
-                        <p class="p-title">Điều kiện cấp chứng chỉ năng lực xây dựng làm khó DN nhỏ?</p>
+                    <div class="title" style="font-size: 14px;">
+                        <i class="fas fa-book icon-book1"></i>
+                        <span class="text">ĐIỀU KIỆN CẤP CHỨNG CHỈ NĂNG LỰC XÂY DỰNG LÀM KHÓ DN NHỎ</span>
                     </div>
                     <div class="question">
                         <strong>Câu hỏi:</strong><br>
@@ -318,9 +338,9 @@
                 <br>
                 <a name="faq2"></a>
                 <div class="detail_faq" id="faq2">
-                    <div class="title">
-                        
-                        <p class="p-title">Nhiều hộ sống cùng một địa chỉ, tách hộ khẩu thế nào?</p>
+                    <div class="title" style="font-size: 14px;">
+                        <i class="fas fa-book icon-book1"></i>
+                        <span class="text">NHIỀU HỘ SỐNG CÙNG MỘT ĐỊA CHỈ, TÁCH HỘ KHẨU THẾ NÀO</span>
                     </div>
                     <div class="question">
                         <strong>Câu hỏi:</strong><br>
@@ -355,9 +375,9 @@
                 <br>
                 <a name="faq1"></a>
                 <div class="detail_faq" id="faq1">
-                    <div class="title">
-                        
-                        <p class="p-title">Không cấp lại bản chính văn bằng, chứng chỉ</p>
+                    <div class="title" style="font-size: 14px;">
+                        <i class="fas fa-book icon-book1"></i>
+                        <span class="p-title">KHÔNG CẤP LẠI BẢNG CHÍNH VĂN BẰNG, CHỨNG CHỈ</span>
                     </div>
                     <div class="question">
                         <strong>Câu hỏi:</strong><br>
@@ -456,6 +476,9 @@
             </div>
         </div>
     </footer>
+    <script src="public/js/menu.js"></script>
+    <script src="public/js/faq.js"></script>
+    <script src="public/js/darkmode.js"></script>
 </body>
 
 </html>

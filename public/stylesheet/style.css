@@ -273,11 +273,6 @@ ul {
     width: 70%;
 }
 
-.checkbox {
-    /* Thiết lập giao diện cho checkbox */
-    margin-top: 0; /* Khoảng cách trên */
-    margin-bottom: 0; /* Khoảng cách dưới */
-}
 
 .btn {
     /* Thiết lập giao diện cho nút */
@@ -288,7 +283,7 @@ ul {
 
 .btn-default {
     /* Thiết lập giao diện cho nút mặc định */
-    background-color: #f5f5f5; /* Màu nền */
+    background-color: #f4f4f4; /* Màu nền */
     border: 1px solid #ccc; /* Viền */
     color: #333; /* Màu chữ */
 }
@@ -326,10 +321,12 @@ ul {
 
 .bg-hot-news-title{
     background-color: #23c270;
+    border-bottom: 1px solid #f4f4f4;
     text-align: center;
-    width: 100%;
+    width: 99.5%;
     padding: 1px;
     margin-bottom: 5%;
+    border-radius: 5px 5px 0px 0px;
 }
 
 li.clear-fix{
@@ -346,10 +343,16 @@ li.clear-fix{
 
 .col-md-14{
     width: 70%;
+    background-color: #f4f4f4;
+    margin-right: 2%;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .col-md-10{
     width: 30%;
+    background-color: #f4f4f4;
+    margin-bottom: 66px;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .fix-more-padding {
@@ -365,13 +368,14 @@ li.clear-fix{
 }
 
 .fix-title-map{
-    margin: 10px 0px;
+    margin: 10px 10px;
     background-color: #23c270;
     padding-top: 2px;
     padding-bottom: 1px;
     font-size: 14px;
     text-align: center;
     margin-top: 10px;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .fix-img-thumb-map {
@@ -379,8 +383,16 @@ li.clear-fix{
     padding-top: 2%;
 }
 
+.img-map {
+    width: 94.5%;
+    text-align: center;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
 .backgroup-img {
     background-color: #f4f4f4;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .row.top.body{
@@ -531,7 +543,12 @@ span.input-group-addon.pointer {
     width: 50%;
 }
 
-.highlighted {
-    background-color: #ffffcc; /* Màu nền nổi bật */
-    border: 2px solid #ffcc00; /* Viền nổi bật */
+.icon-book{
+    margin-right: 0.5%;
+    color:#0261af;
+}
+
+.icon-book1{
+    margin-right: 0.5%;
+    color:#0261af;
 }

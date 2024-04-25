@@ -38,3 +38,14 @@
 .block_faq {
     margin-bottom: 1%;
 }
+
+img.img-button-go-up {
+    border-radius: 25px;
+}
+
+.highlighted {
+    background-color: #ffffcc; /* Màu nền nổi bật */
+    border: 2px solid #ffcc00; /* Viền nổi bật */
+    padding: 1% 1% 1% 1%;
+    border-radius: 5px 5px 5px 5px;
+}

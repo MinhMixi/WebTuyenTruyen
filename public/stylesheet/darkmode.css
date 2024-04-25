@@ -1,0 +1,134 @@
+body {
+    transition: background-color 0.5s ease, color 0.5s ease; /* Thêm thuộc tính color vào transition */
+    background-color: #f0f0f0; /* Màu nền mặc định */
+    color: #333; /* Màu chữ mặc định */
+}
+
+[data-theme="dark"] body {
+    background-color: #333; /* Màu nền chế độ dark mode */
+    color: #f0f0f0; /* Màu chữ chế độ dark mode */
+}
+
+[data-theme="light"] body {
+    background-color: #f0f0f0; /* Màu nền chế độ light mode */
+    color: #333; /* Màu chữ chế độ light mode */
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+li.darkmode-button {
+    margin-top: 4px;
+    margin-left: 1%;
+}
+
+.input-group-addon {
+    background-color: #333;
+}
+
+i.fas.fa-folder-open {
+    color: #f4f4f4;
+    margin-right: -2px;
+}
+
+i.fas.fa-user {
+    color: #f4f4f4;
+    margin-right: -4px;
+    text-align: center;
+}
+
+i.fas.fa-envelope {
+    text-align: center;
+    color: #f4f4f4;
+    margin-right: -2px;
+}
+
+i.fas.fa-phone {
+    color: #f4f4f4;
+    margin-right: -2px;
+}
+
+i.fas.fa-home {
+    color: #f4f4f4;
+    margin-right: -1px;
+    text-align: center;
+}
+
+
+[data-theme="dark"] a.custom-faq {
+    color: #f0f0f0; /* Màu chữ chế độ dark mode */
+}
+
+[data-theme="dark"]
+.custom-faq:hover {
+    color: #cb9149; /* Màu văn bản khi trỏ vào */
+    text-decoration: underline; /* Gạch chân khi trỏ vào */
+}
+
+[data-theme="dark"]
+.highlighted {
+    color: #333;
+    background-color: #ffffcc;
+    border: 2px solid #ffcc00;
+    padding: 1% 1% 1% 1%;
+    border-radius: 5px 5px 5px 5px;
+}

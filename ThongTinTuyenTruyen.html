@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="public/stylesheet/style.css">
     <link rel="stylesheet" href="public/stylesheet/style1.css">
     <link rel="stylesheet" href="public/stylesheet/styleFooter.css">
-    <script src="public/js/menu.js"></script>
+    <link rel="stylesheet" href="public/stylesheet/darkmode.css">
 </head>
 
 <body>
+
     <!-- Đây là header-->
     <header>
         <div class="banner-container">
@@ -51,6 +52,12 @@
                             <li><a href="GuiCauHoi.html">GỬI CÂU HỎI</a></li>
                         </ul>
                     </li>
+                    <li class="darkmode-button">
+                        <label class="switch">
+                            <input type="checkbox" id="toggleSwitch">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
                 </ul>
                 <form id="search-form" onsubmit="return search()">
                     <div class="search">
@@ -76,7 +83,7 @@
                 <div class="col-md-14 col-sm-14 margin-bottom-lg padding-right-col">
                     <h1>Hướng dẫn người dân cách đăng ký xác nhận tình trạng hôn nhân</h1>
                     <div class="text-p">
-                        <p style="font-weight: bold; font-size: 18px;
+                        <p class="p-title " style="font-weight: bold; font-size: 18px;
                     text-align: justify;background-color: silver; margin-right: 1%;
                     margin-left: 1%; padding: 1% 1% 1% 1%; border-radius: 5px 5px 5px 5px;
                     border: 1px solid rgb(213, 213, 213);">
@@ -221,7 +228,7 @@
         </div>
     </div>
     <br>
-    
+
     <!-- Đây là footer -->
     <footer id="footer">
         <div class="backgroup-img-footer">
@@ -239,7 +246,7 @@
                             <li>Sở tài chính</li>
                         </ul>
                     </div>
-                    
+
                     <div class="col-md-8-content">
                         <div class="content-footer">
                             BỘ / NGÀNH
@@ -252,7 +259,7 @@
                             <li>Bộ Y tế</li>
                         </ul>
                     </div>
-                    
+
                     <div class="col-md-8-content">
                         <div class="content-footer">
                             ĐOÀN HỘI
@@ -274,15 +281,19 @@
                             <span style="font-size: 20px; text-transform: uppercase;">
                                 <strong>Ban biên tập Cổng thông tin điện tử UBND Phường 2 Quận 5</strong>
                             </span>
-                            <p style="white-space: nowrap;">Địa chỉ: 97 Trần Bình Trọng, Phường 2, Quận 5, Thành Phố Hồ Chí Minh</p>
+                            <p style="white-space: nowrap;">Địa chỉ: 97 Trần Bình Trọng, Phường 2, Quận 5, Thành Phố Hồ
+                                Chí Minh</p>
                             <p>Điện thoại: 028-3923-6954</p>
                         </div>
                         <div class="col-md-24-2 text-center">
                             <div>
                                 <p>© 2024 - Bản quyền&nbsp;thuộc về UBND Phường 2 Quận 5.</p>
-                                <p>Ghi rõ nguồn "UBND Phường 2 Quận 5" và dẫn đến URL nguồn tin khi phát hành lại thông tin từ website này.</p>
-                                <p><a href="#" style="color: black;text-decoration: none;">Điều khoản sử dụng</a> | 
-                                <a href="#" style="color: black;text-decoration: none;">Chính sách bảo mật (Quyền riêng tư)</a></p>
+                                <p>Ghi rõ nguồn "UBND Phường 2 Quận 5" và dẫn đến URL nguồn tin khi phát hành lại thông
+                                    tin từ website này.</p>
+                                <p><a href="#" style="color: black;text-decoration: none;">Điều khoản sử dụng</a> |
+                                    <a href="#" style="color: black;text-decoration: none;">Chính sách bảo mật (Quyền
+                                        riêng tư)</a>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -290,6 +301,8 @@
             </div>
         </div>
     </footer>
+    <script src="public/js/menu.js"></script>
+    <script src="public/js/darkmode.js"></script>
 </body>
 
 </html>

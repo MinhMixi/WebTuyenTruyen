@@ -11,6 +11,8 @@ h1 {
     width: 100%;
     line-height: 1.5;
     text-align: start;
+    color: black;
+    padding-left: 2%;
 }
 
 .col-md-10 {
@@ -24,13 +26,34 @@ h1 {
     color: red;
 }
 
-.text-p{
+.text-p {
     text-align: justify;
     font-size: 17px;
     color: #333;
     line-height: 1.5;
+    margin-left: 3%;
 }
 
 .clearfix a:hover p {
     color: #a67942;
+}
+
+.p-title{
+    font-weight: bold;
+    font-size: 18px;
+    text-align: justify;
+    background-color: silver;
+    margin-right: 1%;
+    margin-left: 4%;
+    padding: 1% 1% 1% 1%;
+    border-radius: 5px 5px 5px 5px;
+    border: 1px solid rgb(213, 213, 213);
+    padding-left: 1%;
+}
+
+.col-md-14{
+    width: 70%;
+    background-color: #f4f4f4;
+    margin-right: 2%;
+    border-radius: 5px 5px 5px 5px;
 }
