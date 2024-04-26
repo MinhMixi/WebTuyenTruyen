@@ -16,6 +16,7 @@
 <body>
 
     <!-- Đây là header-->
+    <a name="faqlist"></a>
     <header>
         <div class="banner-container">
             <img src="images/banner/banner1.png" id="banner" width="1520px" height="150px" alt="Banner">
@@ -77,6 +78,11 @@
     <br>
 
     <!-- Đây là body -->
+    <div class="gotop" id="gotop">
+        <a href="#faqlist" title="Lên phía trên" onclick="scrollToTop();">
+            <img class="img-button-go-up" alt="Lên phía trên" title="Lên phía trên"
+                src="images/icon/gotop1.png" width="50px" height="50px"></a>     
+    </div>
     <div class="row">
         <div class="col-md-18 fix-more-padding">
             <div class="row">
@@ -299,10 +305,12 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </footer>
     <script src="public/js/menu.js"></script>
     <script src="public/js/darkmode.js"></script>
+    <script src="public/js/faq.js"></script>
 </body>
 
 </html>

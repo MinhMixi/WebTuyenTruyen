@@ -23,13 +23,7 @@
     padding-left: 27px;
 }
 
-.gotop {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999; /* Đảm bảo nút luôn nằm trên các phần tử khác */
-    display: none; /* Ẩn nút khi không cần thiết */
-}
+
 
 .p-title{
     font-size: 16px;

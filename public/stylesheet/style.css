@@ -552,3 +552,14 @@ span.input-group-addon.pointer {
     margin-right: 0.5%;
     color:#0261af;
 }
+
+.gotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999; /* Đảm bảo nút luôn nằm trên các phần tử khác */
+    display: none; /* Ẩn nút khi không cần thiết */
+}
+img.img-button-go-up {
+    border-radius: 100%;
+}
