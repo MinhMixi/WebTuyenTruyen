@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <!-- Đây là header-->
     <a name="faqlist"></a>
     <header>
@@ -40,13 +39,13 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="TinTuc.html">TIN TỨC</a>
+                        <a href="ThongTinTuyenTruyen.html">TIN TỨC</a>
                         <ul class="dropdown-menu">
                             <li><a href="ThongTinTuyenTruyen.html">THÔNG TIN TUYÊN TRUYỀN</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="HoiDap.html">HỎI ĐÁP</a>
+                        <a href="CacCauHoiThuongGap.html">HỎI ĐÁP</a>
                         <ul class="dropdown-menu">
                             <li><a href="CacCauHoiThuongGap.html">CÁC CÂU HỎI THƯỜNG GẶP</a></li>
                             <li><a href="GuiCauHoi.html">GỬI CÂU HỎI</a></li>
@@ -67,15 +66,14 @@
                             margin-bottom: 150px;">
                             </i>
                             <input type="text" id="search-input" placeholder="Nhập từ khóa tìm kiếm">
-                            <button type="submit">Tìm kiếm</button>
+                            <button id="search-button">Tìm kiếm</button>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
     </header>
-    <br>
-
+    
     <!-- Đây là body -->
     <div class="gotop" id="gotop">
         <a href="#faqlist" title="Lên phía trên" onclick="scrollToTop();">
@@ -141,8 +139,8 @@
             <div class="fix-title-map">
                 <h2>BẢN ĐỒ HÀNH CHÍNH</h2>
             </div>
-            <div class="img-map">
-                <img src="images/img/BanDoVN.jpg" width="100%" height="1%">
+            <div id="map">
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWF5wCnLwZkMaIEbDudPCyaovZXT8Ag-E&callback=initMap" async defer></script>
             </div>
             
         </div>
@@ -1190,8 +1188,7 @@
                         <div class="col-md-24-2 text-center">
                             <div>
                                 <p>© 2024 - Bản quyền&nbsp;thuộc về UBND Phường 2 Quận 5.</p>
-                                <p>Ghi rõ nguồn "UBND Phường 2 Quận 5" và dẫn đến URL nguồn tin khi phát hành lại thông
-                                    tin từ website này.</p>
+                                
                                 <p><a href="#" style="color: black;text-decoration: none;">Điều khoản sử dụng</a> |
                                     <a href="#" style="color: black;text-decoration: none;">Chính sách bảo mật (Quyền
                                         riêng tư)</a>
@@ -1203,10 +1200,12 @@
             </div>
         </div>
     </footer>
+
     <script src="public/js/menu.js"></script>
     <script src="public/js/search.js"></script>
     <script src="public/js/darkmode.js"></script>
     <script src="public/js/faq.js"></script>
+    <script src="public/js/apimaps.js"></script>
 </body>
 
 </html>

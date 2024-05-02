@@ -383,11 +383,22 @@ li.clear-fix{
     padding-top: 2%;
 }
 
-.img-map {
+/* .img-map {
     width: 94.5%;
     text-align: center;
     margin-top: -10px;
     margin-left: 10px;
+} */
+
+#map{
+    width: 94.5%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 0px 0px 5px 5px;
+    margin-top: -10px;
 }
 
 .backgroup-img {
