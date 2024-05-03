@@ -16,6 +16,12 @@
 
 <body>
     <!-- Đây là header-->
+    <a name="faqlist"></a>
+    <div class="gotop" id="gotop">
+        <a href="#faqlist" title="Lên phía trên" onclick="scrollToTop();">
+            <img class="img-button-go-up" alt="Lên phía trên" title="Lên phía trên"
+                src="images/icon/gotop1.png" width="50px" height="50px"></a>     
+    </div>
     <header>
         <div class="banner-container">
             <img src="images/banner/banner1.png" id="banner" width="1520px" height="150px" alt="Banner">
@@ -59,19 +65,16 @@
                             <span class="slider round"></span>
                         </label>
                     </li>
+                    <li class="menu-search">
+                        <form id="search-form" onsubmit="return search()">
+                                <div class="search-box">
+                                    <i class="fas fa-search"></i>
+                                    <input type="text" id="search-input" placeholder=" Nhập từ khóa tìm kiếm">
+                                    <button id="search-button">Tìm kiếm</button>
+                            </div>
+                        </form>
+                    </li>
                 </ul>
-                <form id="search-form" onsubmit="return search()">
-                    <div class="search">
-                        <div class="search-box">
-                            <i class="fas fa-search" style="width: 30px;height: 30px;
-                            margin-right: -5px; margin-top: 150px; 
-                            margin-bottom: 150px;">
-                            </i>
-                            <input type="text" id="search-input" placeholder="Nhập từ khóa tìm kiếm">
-                            <button id="search-button">Tìm kiếm</button>
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
     </header>
@@ -83,6 +86,7 @@
             <div class="title-preview">
                 <p class="text-preview">Giới thiệu</p>
             </div>
+            <div class="text-noidung-preview">
             <p>Hiện nay, <strong>UBND Phường 2 Quận 5</strong> nằm trên <strong>Đường Trần Bình Trọng,
                     Phường 2, Quận 5, Thành phố Hồ Chí Minh</strong> đã trở thành điểm đến được rất nhiều người quan tâm
                 và tìm kiếm thông tin.
@@ -94,13 +98,13 @@
                     Đường Trần Bình Trọng</strong>, bạn có thể gửi thông tin cho chúng tôi.
                 Chúng tôi sẽ chuyển thông tin của bạn đến người chịu trách nhiệm tại địa chỉ đó
                 và phản hồi lại cho bạn sớm nhất có thể.</p>
-
+            </div>
         </div>
         <div class="map">
             <div class="map-address">
                 <p class="title-map">Bản đồ map</p>
             </div>
-            <div id="map" style="width: 100%;height: 500px;border-radius: 5px;">
+            <div id="map" style="width: 96%;height: 500px;margin: auto;border-radius: 5px;">
                 <script
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWF5wCnLwZkMaIEbDudPCyaovZXT8Ag-E&callback=initMap"
                     async defer></script>
@@ -110,6 +114,7 @@
             <div class="title-description">
                 <p class="text-des">Mô tả</p>
             </div>
+            <div class="text-noidung-des">
             <p>UBND phường 2 là cơ quan hành chính cấp phường tại Việt Nam.
                 UBND Phường 2 có trách nhiệm quản lý và điều hành công tác hành chính, kinh tế,
                 xã hội và dân sinh trong phạm vi phường. Cụ thể, UBND phường 2 có nhiệm vụ quản lý các lĩnh vực như kế
@@ -137,6 +142,7 @@
             <p>- Quyết định và tổ chức thực hiện các biện pháp nhằm phát huy quyền làm chủ của Nhân dân. 
                 Huy động các nguồn lực xã hội để xây dựng và phát triển kinh tế - xã hội, bảo đảm quốc phòng, an ninh trên địa bàn.</p>
             <p>- Thực hiện nhiệm vụ, quyền hạn do cơ quan hành chính nhà nước cấp trên ủy quyền.</p>
+        </div>
         </div>
     </div>
     <br>
@@ -212,10 +218,81 @@
             </div>
         </div>
     </footer>
+    <footer id="footer">
+        <div class="backgroup-img-footer">
+            <div class="row">
+                <div class="col-md-24">
+                    <div class="col-md-8-content">
+                        <div class="content-footer">
+                            SỞ / BAN NGÀNH
+                        </div>
+                        <ul class="ul-content">
+                            <li>Sở Giáo Dục và Đào Tạo</li>
+                            <li>Sở khoa học và công nghệ</li>
+                            <li>Sở NN&PT Nông Thôn</li>
+                            <li>Sở công thương</li>
+                            <li>Sở tài chính</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-8-content">
+                        <div class="content-footer">
+                            BỘ / NGÀNH
+                        </div>
+                        <ul class="ul-content">
+                            <li>Bộ Nông Nghiệp</li>
+                            <li>Bộ Giáo Dục</li>
+                            <li>Bộ Tài Chính</li>
+                            <li>Bộ Giao thông vận tải</li>
+                            <li>Bộ Y tế</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-8-content">
+                        <div class="content-footer">
+                            ĐOÀN HỘI
+                        </div>
+                        <ul class="ul-content">
+                            <li>Liên hiệp các hội KHKT</li>
+                            <li>LH các tổ chức hữu nghị</li>
+                            <li>Ngân hàng chính sách xã hội</li>
+                            <li>Đoàn thanh niên Việt Nam</li>
+                            <li>Hội tin học Việt Nam</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container-footer">
+                <div class="row">
+                    <div class="col-md-24-2 color-text-footer margin-footer-site">
+                        <div class="text-center">
+                            <span style="font-size: 20px; text-transform: uppercase;">
+                                <strong>Ban biên tập Cổng thông tin điện tử UBND Phường 2 Quận 5</strong>
+                            </span>
+                            <p style="white-space: nowrap;">Địa chỉ: 97 Trần Bình Trọng, Phường 2, Quận 5, Thành Phố Hồ
+                                Chí Minh</p>
+                            <p>Điện thoại: 028-3923-6954</p>
+                        </div>
+                        <div class="col-md-24-2 text-center">
+                            <div>
+                                <p>© 2024 - Bản quyền&nbsp;thuộc về UBND Phường 2 Quận 5.</p>
+                                
+                                <p><a href="#" style="color: black;text-decoration: none;">Điều khoản sử dụng</a> |
+                                    <a href="#" style="color: black;text-decoration: none;">Chính sách bảo mật (Quyền
+                                        riêng tư)</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="public/js/menu.js"></script>
     <script src="public/js/apimaps.js"></script>
     <script src="public/js/darkmode.js"></script>
+    <script src="public/js/scrollToTop.js"></script>
 </body>
 
 </html>

@@ -13,6 +13,12 @@
 
 <body>
     <!-- Đây là header-->
+    <a name="faqlist"></a>
+    <div class="gotop" id="gotop">
+        <a href="#faqlist" title="Lên phía trên" onclick="scrollToTop();">
+            <img class="img-button-go-up" alt="Lên phía trên" title="Lên phía trên"
+                src="images/icon/gotop1.png" width="50px" height="50px"></a>     
+    </div>
     <header>
         <div class="banner-container">
             <img src="images/banner/banner1.png" id="banner" width="1520px" height="150px" alt="Banner">
@@ -50,22 +56,26 @@
                         </ul>
                     </li>
                     <li><a href="https://dichvucong.hochiminhcity.gov.vn/vi/">DỊCH VỤ CÔNG</a></li>
+                    <li class="darkmode-button">
+                        <label class="switch">
+                            <input type="checkbox" id="toggleSwitch">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                    <li class="menu-search">
+                        <form id="search-form" onsubmit="return search()">
+                                <div class="search-box">
+                                    <i class="fas fa-search"></i>
+                                    <input type="text" id="search-input" placeholder=" Nhập từ khóa tìm kiếm">
+                                    <button id="search-button">Tìm kiếm</button>
+                            </div>
+                        </form>
+                    </li>
                 </ul>
-                <form id="search-form" onsubmit="return search()">
-                    <div class="search">
-                        <div class="search-box">
-                            <i class="fas fa-search" style="width: 30px;height: 30px;
-                            margin-right: -5px; margin-top: 150px; 
-                            margin-bottom: 150px;">
-                            </i>
-                            <input type="text" id="search-input" placeholder="Nhập từ khóa tìm kiếm">
-                            <button type="submit">Tìm kiếm</button>
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
     </header>
+    <script src="public/js/scrollToTop.js"></script>
     <script src="public/js/menu.js"></script>
     <script src="public/js/search.js"></script>
 </body>

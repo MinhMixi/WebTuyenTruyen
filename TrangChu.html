@@ -15,6 +15,11 @@
 <body>
     <!-- Đây là header-->
     <a name="faqlist"></a>
+    <div class="gotop" id="gotop">
+        <a href="#faqlist" title="Lên phía trên" onclick="scrollToTop();">
+            <img class="img-button-go-up" alt="Lên phía trên" title="Lên phía trên"
+                src="images/icon/gotop1.png" width="50px" height="50px"></a>     
+    </div>
     <header>
         <div class="banner-container">
             <img src="images/banner/banner1.png" id="banner" width="1520px" height="150px" alt="Banner">
@@ -58,29 +63,22 @@
                             <span class="slider round"></span>
                         </label>
                     </li>
+                    <li class="menu-search">
+                        <form id="search-form" onsubmit="return search()">
+                                <div class="search-box">
+                                    <i class="fas fa-search"></i>
+                                    <input type="text" id="search-input" placeholder=" Nhập từ khóa tìm kiếm">
+                                    <button id="search-button">Tìm kiếm</button>
+                            </div>
+                        </form>
+                    </li>
                 </ul>
-                <form id="search-form" onsubmit="return search()">
-                    <div class="search">
-                        <div class="search-box">
-                            <i class="fas fa-search" style="width: 30px;height: 30px;
-                            margin-right: -5px; margin-top: 150px; 
-                            margin-bottom: 150px;">
-                            </i>
-                            <input type="text" id="search-input" placeholder="Nhập từ khóa tìm kiếm">
-                            <button id="search-button">Tìm kiếm</button>
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
     </header>
     
     <!-- Đây là body -->
-    <div class="gotop" id="gotop">
-        <a href="#faqlist" title="Lên phía trên" onclick="scrollToTop();">
-            <img class="img-button-go-up" alt="Lên phía trên" title="Lên phía trên"
-                src="images/icon/gotop1.png" width="50px" height="50px"></a>     
-    </div>
+    
     <div class="row">
         <div class="col-md-18 fix-more-padding">
             <div class="hot-news">
@@ -90,10 +88,12 @@
                             <a href="tintuc1.html">
                                 <img src="images/img/Hinh1.jpg" width="320" class="img-thumbnail img-private"></a>
                         </div>
-                        <h2 class="margin-bottom-sm"><a href="tintuc1.html" style="text-decoration: none;color: black;">
+                        <h2 class="margin-bottom-sm">
+                            <a href="tintuc1.html" style="text-decoration: none;color: black;margin-left: 10px;">
                                 Phường 2 ra mắt Trung tâm Văn hóa - Thể thao</a>
                         </h2>
-                        <p style="color: black;text-align: justify;">Trung tâm Văn hóa - Thể thao phường 2 tại 756 Trần Hưng Đạo, Phường 2, Quận 5 được sửa chữa
+                        <p style="color: black;text-align: justify;margin-left: 10px;margin-right: 10px;">
+                            Trung tâm Văn hóa - Thể thao phường 2 tại 756 Trần Hưng Đạo, Phường 2, Quận 5 được sửa chữa
                             từ tháng 4/2019 với kinh phí trên 1,5 tỷ đồng;
                             công trình có quy mô 4 tầng, với các phòng chức năng: Thư viện, trung tâm học tập cộng đồng,
                             lớp học kiến thức, kỹ năng, phòng họp và hội trường...</p>
@@ -1205,7 +1205,7 @@
     <script src="public/js/menu.js"></script>
     <script src="public/js/search.js"></script>
     <script src="public/js/darkmode.js"></script>
-    <script src="public/js/faq.js"></script>
+    <script src="public/js/scrollToTop.js"></script>
     <script src="public/js/apimaps.js"></script>
 </body>
 

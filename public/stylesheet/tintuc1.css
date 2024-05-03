@@ -1,0 +1,58 @@
+.title-header {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p.text-top {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.row-tintuc1 {
+    width: 70%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+p.img-description {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.text-noidung {
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.row-tintuc1 {
+    width: 70%;
+    margin-left: 1%;
+    margin-right: 1%;
+    border: 1px solid silver;
+    margin-top: 25px;
+}
+
+.inside-row {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.img-tintuc1 {
+    background-color: silver;
+    border-radius: 5px;
+}
+
+.row-right {
+    width: 27%;
+    border: 1px solid;
+    margin-top: 25px;
+    margin-bottom: 50%;
+}
+
+.full-row-body {
+    width: 100%;
+    display: flex;
+}
