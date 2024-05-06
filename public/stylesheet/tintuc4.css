@@ -3,9 +3,9 @@
     display: flex;
 }
 
-.row-tintuc2 {
+.row-tintuc {
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 2%;
     border: 1px solid silver;
     width: 70%;
     margin-left: 1%;
@@ -34,19 +34,17 @@ img.hinh {
     margin-top: 10px;
 }
 
-.img-tintuc2 {
+.img-tintuc {
     background-color: silver;
     border-radius: 5px;
 }
 
-p.caption-img {
-    font-size: 16px;
-    text-align: center;
+.fix-row{
+    width: 27%;
 }
 
 .row-right {
     border: 1px solid silver;
-    width: 27%;
     margin-top: 25px;
     margin-bottom: 223%;
     border-radius: 5px;
@@ -77,4 +75,9 @@ a.show-black-h4 {
 
 .tin-moi-nhat{
     line-height: 1.5;
+}
+
+p.caption-img {
+    font-size: 16px;
+    text-align: center;
 }

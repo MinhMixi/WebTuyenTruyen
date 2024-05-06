@@ -47,13 +47,40 @@ p.img-description {
 }
 
 .row-right {
-    width: 27%;
-    border: 1px solid;
+    border: 1px solid silver;
     margin-top: 25px;
     margin-bottom: 50%;
+    border-radius: 5px;
 }
 
 .full-row-body {
     width: 100%;
     display: flex;
+}
+
+.header-row-right {
+    background-color: #23c270;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.text-header-row-right {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+.fix-row{
+    width: 27%;
+}
+
+li.news {
+    margin: 10px;
+    background-color: silver;
+    border-radius: 5px;
+}
+
+a.show-black-h4 {
+    margin: 10px;
 }
