@@ -1,8 +1,7 @@
-
 .col-md-24{
     display: flex;
     width: 100%;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 .content-footer {
@@ -29,9 +28,7 @@ ul.ul-content {
 
 .margin-footer-site {
     margin-top: 15px;
-    margin-bottom: 0px;
-    vertical-align: bottom;
-    width: 100%;
+    padding-bottom: 8px;
 }
 
 .text-center{
@@ -48,7 +45,9 @@ ul.ul-content {
 
 .backgroup-img-footer {
     background-color: #f4f5a2;
-    
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
 }
 
 .ul-content li {
