@@ -368,9 +368,9 @@ li.clear-fix{
 .fix-title-map{
     margin: 10px 10px;
     background-color: #23c270;
-    padding-top: 2px;
+    padding-top: 1px;
     padding-bottom: 1px;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     margin-top: 10px;
     border-radius: 5px 5px 0px 0px;
@@ -382,7 +382,7 @@ li.clear-fix{
 }
 
 #map{
-    width: 94.5%;
+    width: 94.6%;
     height: 400px;
     position: relative;
     overflow: hidden;
