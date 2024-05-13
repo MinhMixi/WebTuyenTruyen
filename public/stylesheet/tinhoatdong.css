@@ -47,6 +47,11 @@ img.img-tintuc {
     margin-bottom: 885px;
 }
 
+.title-tin-left {
+    text-align: justify;
+    line-height: 1.5;
+}
+
 .title-tin-right {
     background-color: #23c270;
     padding-top: 1px;
