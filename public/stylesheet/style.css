@@ -100,6 +100,10 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 15px;
 }
 
 /* Navbar style */
@@ -568,6 +572,13 @@ img.img-button-go-up {
     border-radius: 100%;
     width: 50px;
     height: 50px;
+}
+
+img.img-button-go-up:hover {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid rgb(208, 106, 140);
 }
 
 li.clearfix {
