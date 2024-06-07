@@ -654,3 +654,7 @@ a.link-title-tintuc {
     text-decoration: none;
     color: #333;
 }
+
+form#search-form {
+    padding-top: 4px;
+}
